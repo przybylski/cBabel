@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9866CC741B5EA55900631CAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9866CC731B5EA55900631CAB /* AppDelegate.swift */; };
+		9866CC761B5EA55900631CAB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9866CC751B5EA55900631CAB /* MainViewController.swift */; };
+		9866CC781B5EA55900631CAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9866CC771B5EA55900631CAB /* Images.xcassets */; };
+		9866CC7B1B5EA55900631CAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9866CC791B5EA55900631CAB /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9866CC6E1B5EA55900631CAB /* tlatorek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tlatorek.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9866CC721B5EA55900631CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9866CC731B5EA55900631CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9866CC751B5EA55900631CAB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		9866CC771B5EA55900631CAB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9866CC7A1B5EA55900631CAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9866CC6B1B5EA55900631CAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9866CC651B5EA55900631CAB = {
+			isa = PBXGroup;
+			children = (
+				9866CC701B5EA55900631CAB /* tlatorek */,
+				9866CC6F1B5EA55900631CAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9866CC6F1B5EA55900631CAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9866CC6E1B5EA55900631CAB /* tlatorek.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9866CC701B5EA55900631CAB /* tlatorek */ = {
+			isa = PBXGroup;
+			children = (
+				9866CC731B5EA55900631CAB /* AppDelegate.swift */,
+				9866CC751B5EA55900631CAB /* MainViewController.swift */,
+				9866CC771B5EA55900631CAB /* Images.xcassets */,
+				9866CC791B5EA55900631CAB /* Main.storyboard */,
+				9866CC711B5EA55900631CAB /* Supporting Files */,
+			);
+			name = tlatorek;
+			path = tlator;
+			sourceTree = "<group>";
+		};
+		9866CC711B5EA55900631CAB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9866CC721B5EA55900631CAB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9866CC6D1B5EA55900631CAB /* tlatorek */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9866CC8A1B5EA55900631CAB /* Build configuration list for PBXNativeTarget "tlatorek" */;
+			buildPhases = (
+				9866CC6A1B5EA55900631CAB /* Sources */,
+				9866CC6B1B5EA55900631CAB /* Frameworks */,
+				9866CC6C1B5EA55900631CAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = tlatorek;
+			productName = tlator;
+			productReference = 9866CC6E1B5EA55900631CAB /* tlatorek.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9866CC661B5EA55900631CAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Bartosz Przybylski";
+				TargetAttributes = {
+					9866CC6D1B5EA55900631CAB = {
+						CreatedOnToolsVersion = 6.4;
+					};
+				};
+			};
+			buildConfigurationList = 9866CC691B5EA55900631CAB /* Build configuration list for PBXProject "tlatorek" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9866CC651B5EA55900631CAB;
+			productRefGroup = 9866CC6F1B5EA55900631CAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9866CC6D1B5EA55900631CAB /* tlatorek */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9866CC6C1B5EA55900631CAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9866CC781B5EA55900631CAB /* Images.xcassets in Resources */,
+				9866CC7B1B5EA55900631CAB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9866CC6A1B5EA55900631CAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9866CC761B5EA55900631CAB /* MainViewController.swift in Sources */,
+				9866CC741B5EA55900631CAB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9866CC791B5EA55900631CAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9866CC7A1B5EA55900631CAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9866CC881B5EA55900631CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9866CC891B5EA55900631CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9866CC8B1B5EA55900631CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = tlator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = tlatorek;
+			};
+			name = Debug;
+		};
+		9866CC8C1B5EA55900631CAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = tlator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = tlatorek;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9866CC691B5EA55900631CAB /* Build configuration list for PBXProject "tlatorek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9866CC881B5EA55900631CAB /* Debug */,
+				9866CC891B5EA55900631CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9866CC8A1B5EA55900631CAB /* Build configuration list for PBXNativeTarget "tlatorek" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9866CC8B1B5EA55900631CAB /* Debug */,
+				9866CC8C1B5EA55900631CAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9866CC661B5EA55900631CAB /* Project object */;
+}
