@@ -58,8 +58,7 @@
 				9866CC791B5EA55900631CAB /* Main.storyboard */,
 				9866CC711B5EA55900631CAB /* Supporting Files */,
 			);
-			name = cBabel;
-			path = tlator;
+			path = cBabel;
 			sourceTree = "<group>";
 		};
 		9866CC711B5EA55900631CAB /* Supporting Files */ = {
@@ -246,7 +245,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = tlator/Info.plist;
+				INFOPLIST_FILE = cBabel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.przybylski.cbabel;
 				PRODUCT_NAME = cBabel;
@@ -258,7 +257,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = tlator/Info.plist;
+				INFOPLIST_FILE = cBabel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.przybylski.cbabel;
 				PRODUCT_NAME = cBabel;
