@@ -14,7 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9866CC6E1B5EA55900631CAB /* tlatorek.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tlatorek.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9866CC6E1B5EA55900631CAB /* cBabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cBabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9866CC721B5EA55900631CAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9866CC731B5EA55900631CAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9866CC751B5EA55900631CAB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -36,7 +36,7 @@
 		9866CC651B5EA55900631CAB = {
 			isa = PBXGroup;
 			children = (
-				9866CC701B5EA55900631CAB /* tlatorek */,
+				9866CC701B5EA55900631CAB /* cBabel */,
 				9866CC6F1B5EA55900631CAB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,12 +44,12 @@
 		9866CC6F1B5EA55900631CAB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9866CC6E1B5EA55900631CAB /* tlatorek.app */,
+				9866CC6E1B5EA55900631CAB /* cBabel.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9866CC701B5EA55900631CAB /* tlatorek */ = {
+		9866CC701B5EA55900631CAB /* cBabel */ = {
 			isa = PBXGroup;
 			children = (
 				9866CC731B5EA55900631CAB /* AppDelegate.swift */,
@@ -58,7 +58,7 @@
 				9866CC791B5EA55900631CAB /* Main.storyboard */,
 				9866CC711B5EA55900631CAB /* Supporting Files */,
 			);
-			name = tlatorek;
+			name = cBabel;
 			path = tlator;
 			sourceTree = "<group>";
 		};
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9866CC6D1B5EA55900631CAB /* tlatorek */ = {
+		9866CC6D1B5EA55900631CAB /* cBabel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9866CC8A1B5EA55900631CAB /* Build configuration list for PBXNativeTarget "tlatorek" */;
+			buildConfigurationList = 9866CC8A1B5EA55900631CAB /* Build configuration list for PBXNativeTarget "cBabel" */;
 			buildPhases = (
 				9866CC6A1B5EA55900631CAB /* Sources */,
 				9866CC6B1B5EA55900631CAB /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = tlatorek;
+			name = cBabel;
 			productName = tlator;
-			productReference = 9866CC6E1B5EA55900631CAB /* tlatorek.app */;
+			productReference = 9866CC6E1B5EA55900631CAB /* cBabel.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9866CC691B5EA55900631CAB /* Build configuration list for PBXProject "tlatorek" */;
+			buildConfigurationList = 9866CC691B5EA55900631CAB /* Build configuration list for PBXProject "cBabel" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -118,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9866CC6D1B5EA55900631CAB /* tlatorek */,
+				9866CC6D1B5EA55900631CAB /* cBabel */,
 			);
 		};
 /* End PBXProject section */
@@ -248,8 +248,8 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = tlator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pl.przybylski.tlatorek;
-				PRODUCT_NAME = tlatorek;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.przybylski.cbabel;
+				PRODUCT_NAME = cBabel;
 			};
 			name = Debug;
 		};
@@ -260,15 +260,15 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = tlator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pl.przybylski.tlatorek;
-				PRODUCT_NAME = tlatorek;
+				PRODUCT_BUNDLE_IDENTIFIER = pl.przybylski.cbabel;
+				PRODUCT_NAME = cBabel;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9866CC691B5EA55900631CAB /* Build configuration list for PBXProject "tlatorek" */ = {
+		9866CC691B5EA55900631CAB /* Build configuration list for PBXProject "cBabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9866CC881B5EA55900631CAB /* Debug */,
@@ -277,7 +277,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9866CC8A1B5EA55900631CAB /* Build configuration list for PBXNativeTarget "tlatorek" */ = {
+		9866CC8A1B5EA55900631CAB /* Build configuration list for PBXNativeTarget "cBabel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9866CC8B1B5EA55900631CAB /* Debug */,
