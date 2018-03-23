@@ -10,15 +10,15 @@ import Foundation
 
 class File {
 
-	let fileURL : URL
+	let filePath : String
 
-	init(url: URL) {
-		fileURL = url
+	init(path: String) {
+		filePath = path
 	}
 
 	func exists() -> Bool {
 		let manager = FileManager.default
-		return manager.fileExists(atPath: fileURL.absoluteString)
+		return manager.fileExists(atPath: filePath)
 	}
 
 	func readData() -> Data? {
@@ -27,7 +27,7 @@ class File {
 		}
 
 		do {
-			return try Data(contentsOf: fileURL)
+			return try Data(contentsOf: URL(fileURLWithPath: filePath))
 		} catch {
 			NSLog("Error while reading file content \(error)")
 			return nil

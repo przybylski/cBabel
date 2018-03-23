@@ -10,30 +10,49 @@ import Foundation
 
 class ConfigurationReader {
 
-	let configurationFile : File
+	private static let MANIFEST_FILE = "manifest.json"
+	private static let LOCALES_DIR = "_locales"
 
-	init(file : File) {
-		configurationFile = file;
+	var defaultLocale : String = "en"
+	var existingLocale : [String] = []
+
+	private let projectDirectory : Directory
+
+	init(projectDir : String) {
+		projectDirectory = Directory(path: projectDir)
 	}
 
 	func read() {
-		if !configurationFile.exists() {
+		if !projectDirectory.exists() {
 			return
 		}
-		if let fileData = configurationFile.readData() {
-			readFrom(fileData: fileData)
+		readDefaultLocale()
+		readExisitingLocale()
+	}
+
+	private func readExisitingLocale() {
+		existingLocale.removeAll()
+		if let localeDirs = projectDirectory.getDir(dirname: ConfigurationReader.LOCALES_DIR) {
+			for d in localeDirs.getSubdirs() {
+				existingLocale.append(d.getName())
+			}
 		}
 	}
 
-	private func readFrom(fileData : Data) {
+	private func readDefaultLocale() {
+		if let manifest = projectDirectory.getFile(filename: ConfigurationReader.MANIFEST_FILE),
+			let fileData = manifest.readData() {
+			readDefaultLocaleFrom(fileData: fileData)
+		} else {
+			NSLog("Error while reading default locale")
+		}
+	}
+
+	private func readDefaultLocaleFrom(fileData : Data) {
 		do {
 			let jsonRaw = try JSONSerialization.jsonObject(with: fileData, options: JSONSerialization.ReadingOptions.mutableContainers)
 			if let json = jsonRaw as? NSMutableDictionary {
-				var defaultLocale = json["default_locale"]
-				if defaultLocale == nil {
-					defaultLocale = "en"
-				}
-				NSLog("Default locale is \(String(describing: defaultLocale))")
+				defaultLocale = json["default_locale"] as! String? ?? "en"
 			}
 
 		} catch {
