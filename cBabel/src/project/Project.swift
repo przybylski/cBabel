@@ -18,6 +18,27 @@ class Project {
 		confReader.read()
 	}
 
+	func hasLocalesDirectory() -> Bool {
+		return confReader.isCorrectConfiguration() && confReader.hasLocalesDir()
+	}
+
+	func createLocalesDirectory() -> Bool {
+		if !confReader.isCorrectConfiguration() {
+			return false
+		}
+
+		let manager = FileManager.default
+		do {
+			try manager.createDirectory(atPath: confReader.getLocalesPath(), withIntermediateDirectories: true, attributes: nil)
+		} catch {
+			return false
+		}
+		return true
+	}
+
+	func getAvailableLocales() -> [String] {
+		return confReader.existingLocale
+	}
 
 
 }

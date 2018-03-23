@@ -30,6 +30,10 @@ class Directory {
 		return path.components(separatedBy: "/").last!
 	}
 
+	func getFullPath() -> String {
+		return path
+	}
+
 	func getDir(dirname : String) -> Directory? {
 		let fullPath = path + "/" + dirname
 		let manager = FileManager.default

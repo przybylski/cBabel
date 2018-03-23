@@ -41,6 +41,10 @@ class ConfigurationReader {
 		return projectDirectory.getDir(dirname: ConfigurationReader.LOCALES_DIR) != nil
 	}
 
+	func getLocalesPath() -> String {
+		return "\(projectDirectory.getFullPath())/\(ConfigurationReader.LOCALES_DIR)"
+	}
+
 	private func readExisitingLocale() {
 		existingLocale.removeAll()
 		if let localeDirs = projectDirectory.getDir(dirname: ConfigurationReader.LOCALES_DIR) {
