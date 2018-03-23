@@ -10,5 +10,14 @@ import Foundation
 
 
 class Project {
-	
+
+	var confReader : ConfigurationReader
+
+	init(path: String) {
+		confReader = ConfigurationReader(projectDir: path)
+		confReader.read()
+	}
+
+
+
 }

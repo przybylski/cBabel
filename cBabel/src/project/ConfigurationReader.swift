@@ -32,6 +32,15 @@ class ConfigurationReader {
 		readExisitingLocale()
 	}
 
+	func isCorrectConfiguration() -> Bool {
+		return projectDirectory.exists() &&
+			projectDirectory.getFile(filename: ConfigurationReader.MANIFEST_FILE) != nil
+	}
+
+	func hasLocalesDir() -> Bool {
+		return projectDirectory.getDir(dirname: ConfigurationReader.LOCALES_DIR) != nil
+	}
+
 	private func readExisitingLocale() {
 		existingLocale.removeAll()
 		if let localeDirs = projectDirectory.getDir(dirname: ConfigurationReader.LOCALES_DIR) {
