@@ -13,6 +13,8 @@ class ConfigurationReader {
 	private static let MANIFEST_FILE = "manifest.json"
 	private static let LOCALES_DIR = "_locales"
 
+	private static let DEFAULT_LOCALE_FIELD = "default_locale"
+
 	var defaultLocale : String = "en"
 	var existingLocale : [String] = []
 
@@ -52,7 +54,7 @@ class ConfigurationReader {
 		do {
 			let jsonRaw = try JSONSerialization.jsonObject(with: fileData, options: JSONSerialization.ReadingOptions.mutableContainers)
 			if let json = jsonRaw as? NSMutableDictionary {
-				defaultLocale = json["default_locale"] as! String? ?? "en"
+				defaultLocale = json[ConfigurationReader.DEFAULT_LOCALE_FIELD] as! String? ?? "en"
 			}
 
 		} catch {
