@@ -28,6 +28,7 @@ class RecentProjectsViewController : NSViewController {
 		openFileModal.canChooseDirectories = true
 		openFileModal.canChooseFiles = false
 		openFileModal.allowsMultipleSelection = false
+        
 		openFileModal.beginSheetModal(for: self.view.window!) { (modalResponse) in
 
 		}
